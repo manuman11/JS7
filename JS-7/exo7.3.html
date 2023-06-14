@@ -9,22 +9,27 @@
     switch(Op)
     {
         case "*" :
+            
             resultat=NB1*NB2;
             break;
 
-        case "/" :
-            resultat=NB1 / NB2;
-            break;
-
         case "-" :
-            NB3=NB1-NB2
+            
             resultat=NB1-NB2;
             break;
 
-            
         case "+" : 
               
             resultat=NB1+NB2;
+            break;
+            
+        case "/" :
+            
+            resultat=NB1 / NB2;
+            if(NB2==0)
+            {
+                alert("calcul impossible")
+            }
             break;
     }
         alert("le resultat est " + resultat)
